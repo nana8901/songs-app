@@ -3,6 +3,9 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
-  get "/songs" => "songs_controller#index"
+  get "/songs" => "songs#index"
+  get "/songs/:id" => "songs#show"
+  delete "/songs/:id" => "songs#destroy"
+  patch "/songs/:id" => "songs#update"
 
 end

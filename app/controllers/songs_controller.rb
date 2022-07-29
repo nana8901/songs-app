@@ -6,7 +6,17 @@ class SongsController < ApplicationController
   end
   
   def destroy
+    p params
+    render json: {message: "Hi!"}
+  end
+
+  def update
     code
+  end
+
+  def show
+    p params
+    render json: {message: "Hi!"}
   end
 
 end
